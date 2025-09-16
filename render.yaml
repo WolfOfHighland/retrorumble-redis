@@ -1,5 +1,5 @@
 services:
-- type: private
+- type: pserv
   name: redis
   env: docker
   autoDeploy: false
