@@ -10,7 +10,7 @@ RUN sed -i 's/^bind .*/bind 0.0.0.0/' /usr/local/etc/redis/redis.conf
 RUN sed -i 's/^protected-mode .*/protected-mode no/' /usr/local/etc/redis/redis.conf
 
 # ✅ Expose Redis port
-EXPOSE 10000
+EXPOSE 6379
 
 # ✅ Start Redis with your config
 ENTRYPOINT ["redis-server", "/usr/local/etc/redis/redis.conf"]
